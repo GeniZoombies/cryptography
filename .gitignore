@@ -13,3 +13,5 @@ htmlcov/
 *.py[cdo]
 .hypothesis/
 target/
+deps/
+.idea/

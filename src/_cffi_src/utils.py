@@ -75,6 +75,9 @@ def build_ffi(
     ffi.set_source(
         module_name,
         verify_source,
+        library_dirs=['./deps/boringssl/install/lib'],
+        include_dirs=['./deps/boringssl/install/include'],
+        runtime_library_dirs=[],
         libraries=libraries,
         extra_compile_args=extra_compile_args,
     )

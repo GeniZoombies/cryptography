@@ -37,6 +37,9 @@ src_dir = os.path.join(base_dir, "src")
 # means that we need to add the src/ directory to the sys.path.
 sys.path.insert(0, src_dir)
 
+if sys.argv[1] != 'clean':
+    subprocess.run(['./check_deps.sh', sys.argv[1]])
+
 try:
     # See setup.cfg for most of the config metadata.
     setup(
