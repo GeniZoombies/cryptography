@@ -6,7 +6,8 @@ include LICENSE.BSD
 include LICENSE.PSF
 include README.rst
 
-include pyproject.toml check_deps.sh
+include pyproject.toml
+include check_deps.sh
 recursive-include src py.typed *.pyi
 
 recursive-include docs *
