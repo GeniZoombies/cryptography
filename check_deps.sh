@@ -14,7 +14,7 @@ if [ ! -d "$src_dir"/build ]; then
 fi
 if [ ! -d "$src_dir"/build/Makefile ]; then
    cd "$src_dir"/build
-   cmake -DCMAKE_C_FLAGS="-fPIC" -DCMAKE_CXX_FLAGS="-fPIC" -DCMAKE_POSITION_INDEPENDENT_CODE=ON ..
+   cmake -DCMAKE_POSITION_INDEPENDENT_CODE=ON ..
 fi
 if [ ! -e "$src_dir"/install/bin/bssl ]; then
   echo "Prepare build BoringSSL"
