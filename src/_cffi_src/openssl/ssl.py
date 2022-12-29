@@ -807,6 +807,9 @@ void (*SSL_CTX_set_cookie_verify_cb)(SSL_CTX *,
                                        )) = NULL;
 #else
 static const long Cryptography_HAS_SSL_COOKIE = 1;
+void SSL_CTX_set_grease_enabled(SSL_CTX *, int) {
+    return;
+}
 #endif
 #if CRYPTOGRAPHY_OPENSSL_LESS_THAN_111 || \
     CRYPTOGRAPHY_IS_LIBRESSL || CRYPTOGRAPHY_IS_BORINGSSL
