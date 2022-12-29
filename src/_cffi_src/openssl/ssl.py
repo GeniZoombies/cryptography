@@ -375,6 +375,9 @@ unsigned long SSL_CTX_add_extra_chain_cert(SSL_CTX *, X509 *);
 
 /*- These aren't macros these functions are all const X on openssl > 1.0.x -*/
 
+void SSL_CTX_set_grease_enabled(SSL_CTX *, int);
+
+
 /*  methods */
 
 const SSL_METHOD *TLSv1_1_method(void);
